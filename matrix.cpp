@@ -50,9 +50,9 @@ public:
 int main()
 {
     int a, b;
-    printf("Введите количество строк в матрице: \n");
+    printf("Enter the amount of rows: \n");
     scanf("%d", &a);
-    printf("Введите количество столбцов в матрице: \n");
+    printf("Enter the amount of columns: \n");
     scanf("%d", &b);
     Matrix <int> m(a,b);
     m.print();
