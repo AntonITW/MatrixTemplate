@@ -16,7 +16,6 @@ public:
         for (int i = 0; i < row; i++) {
             data[i] = new T [cols]; 
         }
-        srand(time(0));
         int s = 1;
         int e = 100;
         for(int i = 0; i < row; i++) {
@@ -64,6 +63,7 @@ void addition (T m1, T m2) {
 
 int main()
 {
+    srand(time(0));
     int rows, cols;
     printf("Введите количество строк в матрице: \n");
     scanf("%d", &rows);
@@ -72,8 +72,10 @@ int main()
     
     Matrix <int> m1(rows, cols);
     m1.print();
+    
     Matrix <int> m2(rows, cols);
     m2.print();
+    
     addition(m1, m2);
     
     return 0;
